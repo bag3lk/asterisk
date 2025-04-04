@@ -11,4 +11,21 @@ export class AppComponent {
 
   addMe: string = '';
   errorText: string = '';
+
+  addItem(): void {
+    this.errorText = '';
+    if (!this.addMe) {
+      return;
+    }
+    if (this.shoppingList.indexOf(this.addMe) === -1) {
+      this.shoppingList.push(this.addMe);
+    } 
+    else {
+      this.errorText = 'The item is already in your shopping list.';
+    }
+  }
+  removeItem(index: number): void {
+    this.errorText = '';
+    this.shoppingList.splice(index, 1);
+  }
 }
