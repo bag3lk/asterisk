@@ -3,13 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';  // Required for runn
 import { AppComponent } from './app.component';  // Importing the root component
 
 @NgModule({
-  declarations: [
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: []
+  declarations: [AppComponent],
+  imports: [BrowserModule],
+  providers: [],    
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
