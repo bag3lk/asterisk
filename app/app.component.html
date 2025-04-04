@@ -1,10 +1,10 @@
 <div id="parent">
     <ul>
-        <li *ngFor="let product of shoppingList;let i = index">{{ product }}<span id="x" (click)="removeItem(i)"> x</span></li>
+        <li id="li" *ngFor="let product of shoppingList;let i = index">{{ product }}<span id="x" (click)="removeItem(i)"> ×</span></li>
     </ul>
-<input [(ngModel)]="addMe">
+<input [(ngModel)]="addMe" id="input"> <br> 
   <button (click)="addItem()">Add</button>
-  <p>{{errorText}}</p>
 </div>
+<p>{{errorText}}</p>
 <p>Try to add the same item twice, and you will get an error message.</p>
 <hr>
