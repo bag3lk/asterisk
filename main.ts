@@ -8,20 +8,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 @Component({
   selector: 'app-root',
-  template: `
-  hej <p>cos</p>
-   <!--
-     <div>
-      <ul>
-        <li *ngFor="let task of tablica">{{ task }}</li>
-      </ul>
-    </div>
-   -->
-  `,
-  
-  
+  template: ``,
 })
 
 export class AppComponent {
-  tablica: string[] = ['1', '2', '3'];
 }

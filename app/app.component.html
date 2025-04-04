@@ -1,3 +1,5 @@
 <div id="parent">
-    .
+    <ul>
+        <li *ngFor="let product of shoppingList;let i = index">{{ product }}<span (click)="removeItem(i)">x</span></li>
+    </ul>
 </div>
