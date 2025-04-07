@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: false, // przez dwie godziny probowalam zrozumiec co jest nie tak z tym kodem.kms
+  standalone: false, // przez dwie godziny probowalam zrozumiec co jest nie tak z tym kodem. oh.
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
